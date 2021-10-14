@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShowuserController">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: #fabe2e;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <BorderPane layoutX="31.0" layoutY="11.0" prefHeight="603.0" prefWidth="1003.0" style="-fx-border-radius: 20;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                    <center>
+                        <AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="710.0" style="-fx-background-color: #1f1f22;">
+                            <children>
+                                <VBox alignment="CENTER" layoutX="46.0" layoutY="44.0" prefHeight="366.0" prefWidth="210.0" spacing="25.0">
+                                    <children>
+                                        <HBox alignment="CENTER" spacing="5.0">
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                            <children>
+                                                <Line endX="-102.00001525878906" endY="70.29289245605469" fill="#fabe2e" startX="-101.99999237060547" startY="30.201005935668945" stroke="#fabe2e" style="-fx-stroke-width: 7;" />
+                                                <Label contentDisplay="RIGHT" prefHeight="71.0" prefWidth="97.0" text="Profile" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="30.0" />
+                                                    </font>
+                                                    <opaqueInsets>
+                                                        <Insets />
+                                                    </opaqueInsets>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <ImageView fx:id="phProfil" fitHeight="127.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true" style="-fx-borde-radius: 20 20 10 10;" />
+                                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                                    </children>
+                                </VBox>
+                                <VBox alignment="CENTER" layoutX="46.0" layoutY="301.0" prefHeight="147.0" prefWidth="209.0" spacing="15.0">
+                                    <children>
+                                        <Label fx:id="noml" prefHeight="34.0" prefWidth="187.0" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="21.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="tell" layoutX="16.0" layoutY="54.0" prefHeight="34.0" prefWidth="185.0" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="21.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="biol" layoutX="16.0" layoutY="81.0" prefHeight="34.0" prefWidth="189.0" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="21.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                                <Label layoutX="294.0" layoutY="44.0" prefHeight="45.0" prefWidth="144.0" text="Gallerie" textFill="WHITE">
+                                    <font>
+                                        <Font size="30.0" />
+                                    </font>
+                                    <graphic>
+                                        <Line endX="-102.00001525878906" endY="70.29289245605469" fill="#fabe2e" startX="-101.99999237060547" startY="30.201005935668945" stroke="#fabe2e" style="-fx-stroke-width: 7;" />
+                                    </graphic>
+                                </Label>
+                                <ScrollPane fx:id="sp" fitToHeight="true" fitToWidth="true" layoutX="219.0" layoutY="103.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="315.0" prefWidth="468.0" style="-fx-background-color: transparent; -fx-border-color: #fabe2e; -fx-scale-x: white; -fx-border-radius: 10;" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="23.0">
+                                    <content>
+                                        <GridPane fx:id="gp" alignment="BASELINE_CENTER" hgap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="284.0" prefWidth="345.0" style="-fx-background-color: #1f1f22; -fx-border-width: 3;">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                        </GridPane>
+                                    </content>
+                                </ScrollPane>
+                                <Button fx:id="feed" layoutX="244.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-radius: 12;" text="Ajouter Feedback" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="showfb" layoutX="391.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-radius: 12;" text="Afficher Feedback" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="btnab" layoutX="539.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-radius: 12;" text="S'abonner" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="btndes" layoutX="539.0" layoutY="517.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-radius: 12;" text="Désabonner" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="12.0" />
+                                    </font>
+                                </Button>
+                        <Button fx:id="suppFeedBtn" layoutX="71.0" layoutY="461.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-radius: 12;" text="Supprimer Feedback" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                            </children>
+                        </AnchorPane>
+                    </center>
+                    <left>
+                        <Pane fx:id="pane" prefHeight="614.0" prefWidth="323.0" style="-fx-background-color: #1f1f22;" BorderPane.alignment="CENTER" />
+                    </left>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

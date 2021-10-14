@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReclamationItemController">
+    <children>
+        <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox>
+                    <children>
+                        <Label fx:id="photoLB" prefHeight="35.0" prefWidth="422.0" text="photo" />
+                        <HBox>
+                            <children>
+                                <Label fx:id="sujetLB" prefHeight="37.0" prefWidth="324.0" text="Sujet" />
+                                <Label fx:id="dateLB" alignment="CENTER" prefHeight="34.0" prefWidth="164.0" text="date" textAlignment="CENTER" />
+                            </children>
+                        </HBox>
+                        <Label fx:id="descriptionLB" alignment="TOP_LEFT" prefHeight="61.0" prefWidth="488.0" text="descrofg" textAlignment="JUSTIFY" wrapText="true" />
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" spacing="10.0">
+                    <children>
+                        <Label fx:id="etatLB" alignment="CENTER" prefHeight="31.0" prefWidth="89.0" text="Status" />
+                        <Button fx:id="detailBTN" mnemonicParsing="false" onAction="#detailClick" text="Detail">
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
+    </padding>
+</AnchorPane>

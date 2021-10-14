@@ -1,0 +1,14 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "dist/lib/activation.jar",
+        "dist/lib/controlsfx-8.40.15.jar",
+        "dist/lib/itextpdf-5.1.0.jar",
+        "dist/lib/javax.mail.jar",
+        "dist/lib/jfoenix-9.0.10.jar",
+        "dist/lib/mysql-connector-java-5.1.23-bin.jar",
+        "dist/lib/pdfjet-5.75.jar"
+    ],
+    "workbench.editor.decorations.colors": true,
+    "workbench.preferredDarkColorTheme": "Default Light+"
+}

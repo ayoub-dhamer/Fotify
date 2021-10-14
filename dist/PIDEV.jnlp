@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PIDEV.jnlp">
+  <information>
+    <title>PIDEV</title>
+    <vendor>YACINE</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PIDEV.jar" size="477466" download="eager" />
+    <jar href="lib\AnimateFX-1.2.0.jar" size="85823" download="eager" />
+    <jar href="lib\GMapsFX-2.0.8.jar" size="166402" download="eager" />
+    <jar href="lib\TrayNotification.jar" size="41019" download="eager" />
+    <jar href="lib\activation.jar" size="124332" download="eager" />
+    <jar href="lib\comm-2.0.jar" size="28043" download="eager" />
+    <jar href="lib\commons-io-2.6.jar" size="247129" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\controlsfx-8.40.15.jar" size="1402490" download="eager" />
+    <jar href="lib\fontawesomefx-8.2.jar" size="180341" download="eager" />
+    <jar href="lib\fontawesomefx-commons-8.15.jar" size="20957" download="eager" />
+    <jar href="lib\fontawesomefx-controls-8.15.jar" size="3369" download="eager" />
+    <jar href="lib\fontawesomefx-emojione-2.2.7-2.jar" size="3642164" download="eager" />
+    <jar href="lib\fontawesomefx-fontawesome-4.7.0-5.jar" size="136891" download="eager" />
+    <jar href="lib\fontawesomefx-glyphsbrowser-1.3.0.jar" size="68461" download="eager" />
+    <jar href="lib\fontawesomefx-icons525-3.0.0-4.jar" size="110545" download="eager" />
+    <jar href="lib\fontawesomefx-materialdesignfont-1.7.22-4.jar" size="197373" download="eager" />
+    <jar href="lib\fontawesomefx-materialicons-2.2.0-5.jar" size="103686" download="eager" />
+    <jar href="lib\fontawesomefx-octicons-4.3.0-5.jar" size="37157" download="eager" />
+    <jar href="lib\fontawesomefx-weathericons-2.0.10-5.jar" size="83098" download="eager" />
+    <jar href="lib\google-maps-services-0.2.7.jar" size="184987" download="eager" />
+    <jar href="lib\gson-2.2.2.jar" size="189285" download="eager" />
+    <jar href="lib\gson-2.6.2-javadoc.jar" size="260989" download="eager" />
+    <jar href="lib\gson-2.8.1.jar" size="232620" download="eager" />
+    <jar href="lib\gson-2.8.2-javadoc.jar" size="263440" download="eager" />
+    <jar href="lib\gson-2.8.2.jar" size="232932" download="eager" />
+    <jar href="lib\itextpdf-5.1.0.jar" size="1614453" download="eager" />
+    <jar href="lib\javax.mail.jar" size="434923" download="eager" />
+    <jar href="lib\jfoenix-8.0.1.jar" size="2405714" download="eager" />
+    <jar href="lib\json-20201115.jar" size="69370" download="eager" />
+    <jar href="lib\json-simple-1.1.1.jar" size="23737" download="eager" />
+    <jar href="lib\jxmaps-1.3.1.jar" size="859749" download="eager" />
+    <jar href="lib\jxmaps-win-1.3.1.jar" size="50757483" download="eager" />
+    <jar href="lib\jxmapsdemo.jar" size="1108867" download="eager" />
+    <jar href="lib\mail.jar" size="666983" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="843090" download="eager" />
+    <jar href="lib\pdfjet-5.75.jar" size="215660" download="eager" />
+    <jar href="lib\selenium-server-3.11.0.jar" size="589215" download="eager" />
+    <jar href="lib\stripe-java-7.23.0.jar" size="517898" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="PIDEV" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="test.Fotify"  name="PIDEV" />
+  <update check="always"/>
+</jnlp>

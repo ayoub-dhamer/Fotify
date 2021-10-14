@@ -1,0 +1,24 @@
+.default-color0.chart-pie { -fx-pie-color:  #1f1f22; }
+.default-color1.chart-pie { -fx-pie-color: #ffa500; }
+.default-color2.chart-pie { -fx-pie-color: #860061; }
+.default-color3.chart-pie { -fx-pie-color: #adff2f; }
+.default-color4.chart-pie { -fx-pie-color: #ff5700; }
+
+/* Pie Chart legend background color and stroke. */
+.chart-legend { -fx-background-color: white; }
+.chart-title {
+  -fx-text-fill: white;
+  -fx-font-size: 1.6em;
+}
+.axis {
+    -fx-font-size: 1.4em;    
+    -fx-tick-label-fill: #914800;
+    -fx-font-family: Tahoma;
+    -fx-tick-length: 20;
+    -fx-minor-tick-length: 10;
+}
+ 
+.chart-pie-label {
+    -fx-fill: #fabe2e;
+    -fx-font-size: 1em;
+} 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+
+
+<HBox fx:id="item" fillHeight="false" prefHeight="44.0" prefWidth="205.0" style="-fx-background-color: #1f1f22; -fx-background-radius: 30; -fx-border-color: #1f1f22; -fx-alignment: center; -fx-padding: 10;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" />

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #fabe2e;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUpController">
+    <children>
+        <AnchorPane id="AnchorPane" layoutY="-20.0" prefHeight="556.0" prefWidth="954.0" style="-fx-background-color: #1f1f22;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" spacing="20.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="10.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="506.0" prefWidth="432.0" spacing="50.0">
+                            <children>
+                                <VBox alignment="CENTER" prefHeight="552.0" prefWidth="350.0" spacing="20.0">
+                                    <children>
+                                        <HBox alignment="CENTER" prefHeight="147.0" prefWidth="350.0">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="92.0" prefWidth="242.0" style="-fx-background-color: #fabe2e; -fx-background-radius: 10;" text="Fotify" textFill="#1f1f22">
+                                                    <font>
+                                                        <Font name="Bauhaus 93" size="60.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <VBox alignment="CENTER" prefHeight="67.0" prefWidth="323.0">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="380.0" text="Découvrez et partagez " textAlignment="CENTER" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="24.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="32.0" prefWidth="366.0" text="les meilleures photos du monde" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="21.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </VBox>
+                                <Line endX="-10.586230278015137" endY="857.9437255859375" startX="-10.585844039916992" startY="454.65081787109375" stroke="#fabe1e" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="506.0" prefWidth="402.0">
+                            <children>
+                                <VBox prefHeight="519.0" prefWidth="387.0">
+                                    <children>
+                                        <AnchorPane prefHeight="506.0" prefWidth="387.0">
+                                            <children>
+                                                <Label layoutX="129.0" layoutY="34.0" prefHeight="47.0" prefWidth="167.0" text="S'inscrire" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Calibri Bold" size="39.0" />
+                                                    </font>
+                                                    <graphic>
+                                                        <Line endX="-101.99996948242188" endY="58.85428237915039" fill="#fabe2e" startX="-101.99999237060547" startY="18.80402946472168" stroke="#fabe2e" style="-fx-stroke-width: 7;" />
+                                                    </graphic>
+                                                </Label>
+                                                <VBox alignment="CENTER" layoutX="45.0" layoutY="127.0" spacing="40.0">
+                                                    <children>
+                                                        <HBox alignment="CENTER" spacing="25.0">
+                                                            <children>
+                                                                <TextField fx:id="TF_nom" accessibleRole="IMAGE_VIEW" promptText="Nom" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: white;">
+                                                                    <effect>
+                                                                        <Glow />
+                                                                    </effect>
+                                                                </TextField>
+                                                                <TextField fx:id="TF_presnom" promptText="Prénom" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: white;" />
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox alignment="CENTER" spacing="25.0">
+                                                            <children>
+                                                                <TextField fx:id="TF_email" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: white;" />
+                                                                <PasswordField fx:id="TF_password" promptText="Password " style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: white;" />
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox alignment="CENTER" spacing="25.0">
+                                                            <children>
+                                                                <TextField fx:id="TF_age" prefWidth="149.0" promptText="Age" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: white;" />
+                                                                <TextField fx:id="TF_tel" promptText="Téléphone" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: white;" />
+                                                            </children>
+                                                        </HBox>
+                                                        <HBox alignment="CENTER" spacing="25.0">
+                                                            <children>
+                                                                <RadioButton fx:id="homme_rb" mnemonicParsing="false" text="Homme" textFill="#f8f5f5" />
+                                                                <RadioButton fx:id="femme_rb" mnemonicParsing="false" text="Femme" textFill="#f2ecec" />
+                                                            </children>
+                                                        </HBox>
+                                                    </children>
+                                                </VBox>
+                                                <Button fx:id="btn_signup" layoutX="166.0" layoutY="373.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" style="-fx-border-color: #fabe1e; -fx-background-color: #1f1f22; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 12;" text="S'inscrire" textFill="WHITE" />
+                                                <HBox alignment="CENTER" layoutX="26.0" layoutY="416.0" spacing="20.0">
+                                                    <children>
+                                                        <Separator prefHeight="4.0" prefWidth="158.0" />
+                                                        <Label alignment="TOP_CENTER" text="Ou" textFill="#c9c4c4" />
+                                                        <Separator prefHeight="4.0" prefWidth="149.0" />
+                                                    </children>
+                                                </HBox>
+                                                <Button fx:id="btndeja" layoutX="132.0" layoutY="444.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="149.0" style="-fx-border-color: #fabe1e; -fx-background-color: #1f1f22; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 12;" text="Déja inscrit" textFill="WHITE" />
+                                            </children>
+                                        </AnchorPane>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

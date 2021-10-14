@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #fabe2e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShowPhotoController">
+    <children>
+        <BorderPane layoutX="20.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <center>
+                <AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="710.0" style="-fx-background-color: #1f1f22;">
+                    <children>
+                        <BorderPane layoutX="35.0" layoutY="97.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="327.0" prefWidth="332.0" AnchorPane.bottomAnchor="97.0" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="26.0">
+                            <center>
+                                <ImageView fx:id="ima" fitHeight="192.0" fitWidth="335.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                            </center>
+                            <bottom>
+                                <Label fx:id="tfcol" BorderPane.alignment="CENTER" />
+                            </bottom>
+                            <top>
+                                <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="359.0" BorderPane.alignment="CENTER">
+                                    <children>
+                                        <Label fx:id="tftitre" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="28.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </top>
+                        </BorderPane>
+                        <HBox alignment="CENTER" layoutX="11.0" layoutY="369.0" prefHeight="59.0" prefWidth="386.0" spacing="10.0" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="11.0">
+                            <children>
+                                <Button fx:id="btnProfil" mnemonicParsing="false" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-background-radius: 12; -fx-border-radius: 10; -fx-border-width: 3;" text="Profil" textFill="WHITE" />
+                                <Button fx:id="BtnRech" mnemonicParsing="false" prefHeight="43.0" prefWidth="100.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-background-radius: 12; -fx-border-radius: 10; -fx-border-width: 3;" text="Recherche" textFill="WHITE" />
+                                <Button fx:id="rec" layoutX="165.0" layoutY="18.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="100.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-background-radius: 12; -fx-border-radius: 10; -fx-border-width: 3;" text="Relamation" textFill="WHITE" />
+                        <Button fx:id="savebtn" layoutX="216.0" layoutY="18.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="100.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-background-radius: 12; -fx-border-radius: 10; -fx-border-width: 3;" text="Télécharger" textFill="WHITE" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" layoutX="431.0" layoutY="377.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="43.0" prefWidth="247.0" spacing="20.0" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="32.0">
+                            <children>
+                                <Button fx:id="btncomm" mnemonicParsing="false" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-background-radius: 12; -fx-border-radius: 10; -fx-border-width: 3;" text="Ajouter" textFill="WHITE" />
+                                <Button fx:id="btnmodif" mnemonicParsing="false" prefHeight="43.0" prefWidth="197.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-background-radius: 12; -fx-border-radius: 10; -fx-border-width: 3;" text="Gérer mes commentaires" textFill="WHITE" />
+                            </children>
+                        </HBox>
+                        <VBox layoutX="431.0" layoutY="26.0" spacing="10.0" AnchorPane.bottomAnchor="108.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="26.0">
+                            <children>
+                                <ScrollPane fx:id="sp" fitToHeight="true" fitToWidth="true" prefHeight="193.0" prefWidth="247.0" style="-fx-background-color: #fabe2e;" VBox.vgrow="ALWAYS">
+                                    <content>
+                                        <AnchorPane prefHeight="180.0" prefWidth="245.0" style="-fx-background-color: #1f1f22;" />
+                                    </content>
+                                </ScrollPane>
+                                <ScrollPane fx:id="sp1" fitToHeight="true" fitToWidth="true" prefHeight="113.0" prefWidth="247.0" style="-fx-background-color: #fabe2e;">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1f1f22;" />
+                                    </content>
+                                </ScrollPane>
+                            </children>
+                        </VBox>
+                  <HBox alignment="CENTER" layoutX="8.0" layoutY="467.0" prefHeight="59.0" prefWidth="264.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="likeBtn" mnemonicParsing="false" prefHeight="41.0" prefWidth="266.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-background-radius: 12; -fx-border-radius: 10; -fx-border-width: 3;" text="J'aime" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIcon fill="#e80d8c" glyphName="HEART" />
+                           </graphic></Button>
+                     </children>
+                  </HBox>
+                    </children>
+                </AnchorPane>
+            </center>
+            <left>
+                <Pane fx:id="pane" prefHeight="614.0" prefWidth="323.0" style="-fx-background-color: #1f1f22;" BorderPane.alignment="CENTER" />
+            </left>
+        </BorderPane>
+    </children>
+</AnchorPane>

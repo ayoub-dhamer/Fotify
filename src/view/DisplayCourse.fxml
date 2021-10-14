@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #fabe2e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+    <children>
+        <BorderPane layoutX="20.0" style="-fx-background-color: #1f1f22;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <center>
+                <BorderPane style="-fx-background-color: #1f1f22;">
+                    <center>
+                        <AnchorPane id="AnchorPane" style="-fx-background-color: #1f1f22;">
+                            <children>
+                                <ScrollPane fitToHeight="true" fitToWidth="true" layoutY="200.0" style="-fx-background-color: #1f1f22;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+                                    <content>
+                                        <FlowPane fx:id="fp" alignment="CENTER" columnHalignment="CENTER" hgap="50.0" prefHeight="282.0" prefWidth="710.0" style="-fx-background-color: #1f1f22;" vgap="50.0" />
+                                    </content>
+                                </ScrollPane>
+                                <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="76.0" layoutY="48.0" prefHeight="40.0" prefWidth="281.0" text="Consulter Nos Cours" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="28.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="search" layoutX="84.0" layoutY="166.0" onAction="#search" prefHeight="23.0" prefWidth="182.0" promptText="Rechercher" AnchorPane.rightAnchor="446.0" />
+                                <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="130.0" layoutY="92.0" prefHeight="74.0" prefWidth="454.0" text="Maîtrisez votre appareil photo et passez du niveau débutant au niveau professionnel" textFill="#db0f21" wrapText="true">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Label>
+                                <Line endX="-102.00001525878906" endY="70.29289245605469" fill="#fabe2e" layoutX="173.0" layoutY="16.0" startX="-102.0" startY="32.0" stroke="#fabe2e" style="-fx-stroke-width: 7;" />
+                            </children>
+                        </AnchorPane>
+                    </center>
+                </BorderPane>
+            </center>
+            <left>
+                <Pane fx:id="pane" prefHeight="614.0" prefWidth="323.0" style="-fx-background-color: #1f1f22;" BorderPane.alignment="CENTER" />
+            </left>
+        </BorderPane>
+    </children>
+</AnchorPane>

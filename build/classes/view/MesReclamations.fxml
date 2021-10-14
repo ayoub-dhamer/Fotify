@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #fabe2e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MesReclamationsController">
+    <children>
+        <AnchorPane layoutX="20.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <BorderPane prefHeight="614.0" prefWidth="943.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <center>
+                        <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1f1f22;">
+                            <children>
+                                <ScrollPane fx:id="sp" fitToHeight="true" fitToWidth="true" layoutX="37.0" layoutY="148.0" prefHeight="433.0" prefWidth="540.0" style="-fx-background-color: #1f1f22;" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="30.0">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="512.0" style="-fx-background-color: #1f1f22;" />
+                                    </content>
+                                </ScrollPane>
+                                <HBox layoutX="50.0" layoutY="40.0" prefHeight="50.0" prefWidth="327.0">
+                                    <children>
+                                        <Label alignment="TOP_LEFT" prefHeight="50.0" prefWidth="194.0" text="Reclamation" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="29.0" />
+                                            </font>
+                                            <graphic>
+                                                <Line endX="-102.00001525878906" endY="70.29289245605469" fill="#fabe2e" startX="-101.99999237060547" startY="30.201005935668945" stroke="#fabe2e" style="-fx-stroke-width: 7;" />
+                                            </graphic>
+                                        </Label>
+                                        <Label prefHeight="50.0" prefWidth="95.0" text="Liste" textFill="WHITE">
+                                            <font>
+                                                <Font size="29.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </center>
+                    <left>
+                        <Pane fx:id="pane" prefHeight="614.0" prefWidth="323.0" style="-fx-background-color: #1f1f22;" BorderPane.alignment="CENTER" />
+                    </left>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

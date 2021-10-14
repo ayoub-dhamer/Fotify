@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #fabe2e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignInController">
+    <children>
+        <AnchorPane prefHeight="530.0" prefWidth="726.0" style="-fx-background-color: #1f1f22;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <HBox alignment="BASELINE_CENTER" layoutX="20.0" layoutY="61.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="30.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="61.0">
+                    <children>
+                        <HBox prefHeight="417.0" prefWidth="343.0">
+                            <children>
+                                <VBox alignment="CENTER" prefHeight="356.0" prefWidth="352.0" spacing="35.0">
+                                    <children>
+                                        <HBox alignment="CENTER" prefHeight="145.0" prefWidth="305.0">
+                                            <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="92.0" prefWidth="242.0" style="-fx-background-color: #fabe2e; -fx-background-radius: 10;" text="Fotify" textFill="#1f1f22">
+                                                    <font>
+                                                        <Font name="Bauhaus 93" size="60.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <VBox alignment="CENTER" prefHeight="67.0" prefWidth="331.0">
+                                            <children>
+                                                <Label prefHeight="35.0" prefWidth="380.0" text="Découvrez et partagez " textFill="WHITE">
+                                                    <font>
+                                                        <Font name="System Bold" size="24.0" />
+                                                    </font>
+                                                </Label>
+                                                <Label prefHeight="32.0" prefWidth="366.0" text="les meilleures photos du monde" textFill="WHITE">
+                                                    <font>
+                                                        <Font size="21.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox maxWidth="1.7976931348623157E308" prefHeight="373.0" prefWidth="353.0">
+                            <children>
+                                <Line endX="-12.207106590270996" endY="379.29290771484375" startX="-12.0" startY="8.0" stroke="#fabe1e" />
+                                <AnchorPane focusTraversable="true" prefHeight="373.0" prefWidth="343.0">
+                                    <children>
+                                        <Label layoutX="104.0" layoutY="14.0" prefHeight="50.0" prefWidth="165.0" text="S'inscrire" textAlignment="CENTER" textFill="#f2f2f2">
+                                            <font>
+                                                <Font name="Calibri" size="34.0" />
+                                            </font>
+                                            <graphic>
+                                                <Line endX="-102.00001525878906" endY="70.29289245605469" fill="#fabe2e" startX="-101.99999237060547" startY="44.60301971435547" stroke="#fabe2e" style="-fx-stroke-width: 7;" />
+                                            </graphic>
+                                        </Label>
+                                        <TextField fx:id="email" layoutX="100.0" layoutY="99.0" prefHeight="25.0" prefWidth="184.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: white;">
+                                            <effect>
+                                                <Glow />
+                                            </effect>
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </TextField>
+                                        <PasswordField fx:id="password" layoutX="100.0" layoutY="168.0" prefHeight="27.0" prefWidth="184.0" promptText="Mot de passe" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px; -fx-text-fill: white;" />
+                                        <VBox layoutX="100.0" layoutY="223.0" spacing="15.0">
+                                            <children>
+                                                <Button fx:id="btn_signIn" mnemonicParsing="false" prefHeight="39.0" prefWidth="185.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 12;" text="S'authentifier" textFill="WHITE" textOverrun="CLIP">
+                                                    <effect>
+                                                        <Glow />
+                                                    </effect>
+                                                    <font>
+                                                        <Font name="System Bold" size="12.0" />
+                                                    </font>
+                                                </Button>
+                                                <Button fx:id="forget" mnemonicParsing="false" prefHeight="40.0" prefWidth="185.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 12;" text="Créer nouveau compte" textFill="WHITE" textOverrun="CLIP">
+                                                    <effect>
+                                                        <Glow />
+                                                    </effect>
+                                                    <font>
+                                                        <Font name="System Bold" size="12.0" />
+                                                    </font>
+                                                </Button>
+                                            </children>
+                                        </VBox>
+                                        <Hyperlink fx:id="pass" layoutX="125.0" layoutY="320.0" text="Mot de passe oublié ?" textAlignment="CENTER" textFill="#fabe1e" />
+                                    </children>
+                                </AnchorPane>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+                <HBox layoutX="531.0" layoutY="25.0" AnchorPane.rightAnchor="43.0">
+                    <children>
+                        <Button fx:id="cancel" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: #1f1f22; -fx-border-color: #fabe1e; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 12;" text="Quitter" textFill="WHITE" textOverrun="CLIP">
+                            <effect>
+                                <Glow />
+                            </effect>
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
